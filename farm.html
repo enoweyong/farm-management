@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm Management System</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Farm Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#crop-management">Crop Management</a></li>
+                <li><a href="#livestock-management">Livestock Management</a></li>
+                <li><a href="#inventory-management">Inventory Management</a></li>
+                <li><a href="#financial-management">Financial Management</a></li>
+                <li><a href="#user-management">User Management</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard">
+            <h2>Dashboard Overview</h2>
+            <div class="dashboard-widgets">
+                <div class="widget">Total Crops: <span id="total-crops">100</span></div>
+                <div class="widget">Livestock Count: <span id="livestock-count">50</span></div>
+                <div class="widget">Inventory Levels: <span id="inventory-levels">200</span></div>
+                <div class="widget">Financial Summary: <span id="financial-summary">$5000</span></div>
+                <div class="widget">Weather Forecast: <span id="weather-forecast">Sunny</span></div>
+            </div>
+        </section>
+
+        <section id="crop-management">
+            <h2>Crop Management</h2>
+            <button onclick="addCrop()">Add Crop</button>
+            <div id="crop-list"></div>
+        </section>
+
+        <section id="livestock-management">
+            <h2>Livestock Management</h2>
+            <button onclick="addLivestock()">Add Livestock</button>
+            <div id="livestock-list"></div>
+        </section>
+
+        <section id="inventory-management">
+            <h2>Inventory Management</h2>
+            <button onclick="addInventoryItem()">Add Item</button>
+            <div id="inventory-list"></div>
+        </section>
+
+        <section id="financial-management">
+            <h2>Financial Management</h2>
+            <button onclick="logIncome()">Log Income</button>
+            <button onclick="logExpense()">Log Expense</button>
+            <div id="financial-list"></div>
+        </section>
+
+        <section id="user-management">
+            <h2>User Management</h2>
+            <button onclick="manageUsers()">Manage Users</button>
+            <div id="user-list"></div>
+        </section>
+
+
+        <section id="settings">
+            <h2>Settings</h2>
+            <label for="theme-select">Choose Theme:</label>
+            <select id="theme-select">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+            <br>
+            <label for="language-select">Choose Language:</label>
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+            </select>
+            <br>
+            <button onclick="updateSettings()">Update Settings</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Farm Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
